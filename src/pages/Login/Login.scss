@@ -1,0 +1,130 @@
+@import '../../styles/app';
+
+.wrapper {
+  margin-top: 10%
+}
+.login-form {
+  width: 100%;
+  
+  @media (min-width: 500px) and (max-width: 767px) {
+    width: 75%;
+  }
+  @media (min-width: 991px) {
+    width: 75%;
+  }
+  @media (min-width: 1200px) {
+    width: 75%;
+    padding-right: 80px;
+  }
+}
+.top_padding{
+  padding-top: 10%;
+}
+
+.left_padding {
+  padding-left: 10%;
+}
+
+.botton_padding {
+  padding-bottom: 10%;
+}
+
+.weight {
+  font-weight: 600;
+  font-size: 135%;
+}
+
+.about{
+  font-weight: 600;
+  font-size: 140%;
+}
+
+.about_tms {
+  font-weight: 500;
+  // font-size: 90%;
+}
+.left {
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  padding-right: 10%;
+  padding-left: 5%;
+}
+
+.featureList li::before {
+  color: #50b798;
+  content: "\2022";
+  font-size: 170%;
+  padding-right: 10px;
+  font-weight: 900;
+  vertical-align: sub;
+}
+
+li:not(:last-child) {
+  margin-bottom: -10px;
+}
+
+.login-page {
+  padding-top: 20vh;
+  height: 100%;
+  .login_container{
+    max-width: 420px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .widget {
+    max-width: 460px;
+    padding: 30px !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: $font-weight-normal;
+    }
+  }
+  .fa-spin-fast{
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+  .footer {
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #636c72;
+    text-align: center;
+
+    @media (min-height: 600px) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: $font-weight-normal;
+
+    i {
+      font-size: 13px;
+      margin: 0 20px;
+    }
+  }
+}

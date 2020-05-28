@@ -1,0 +1,47 @@
+@import '../../styles/app';
+
+.size{
+    font-size: 25px;
+}
+.heading{
+    margin: 0 auto;
+}
+
+.employees{
+    height: 140px;
+    overflow: auto;
+    width: inherit;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.week_parent{
+    input.apple-switch:checked {
+        // box-shadow: inset 20px 0 0 0 #4ed164;
+        box-shadow: inset 20px 0 0 0 #3abf94;
+        border-color: #3abf94;
+    }
+    input.apple-switch{
+        width: 43px;
+        height: 22px;
+    }
+    input.apple-switch:after{
+        width: 18px;
+        height: 19px;
+    }
+}
+
+.toast_opacity{
+    opacity: 1;
+}
+
+.size{
+    font-size: 43px;
+}
+
+@media (max-width: 500px) {  
+    .size{
+        font-size: 20px;
+        font-weight: bold;
+    }   
+}

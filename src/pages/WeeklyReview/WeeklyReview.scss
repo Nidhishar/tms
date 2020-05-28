@@ -1,0 +1,31 @@
+@import '../../styles/app';
+.report-wysiwyg {
+  /deep/ ol li {
+    list-style: decimal !important;
+    margin-left: 30px;
+  }
+  /deep/ ul li {
+    list-style: disc !important;
+    margin-left: 30px;
+  }
+}
+
+table {
+  td, th {
+    font-weight: $font-weight-normal;
+  }
+
+  tbody tr {
+    &:nth-child(odd) {
+      background: $gray-100;
+    }
+
+    td {
+      min-width: 100px;
+    }
+  }
+}
+.white-space-pre{
+  white-space: pre-line;
+  word-break: break-all;
+}
